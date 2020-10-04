@@ -1,6 +1,3 @@
-// The idea is to map every number to a dictionary in order 
-// to check in O(1) if the number may form a k-diff pair. 
-// The frequency is only used for the case when nums[i] = nums[j]
 class Solution {
 public:
     int findPairs(vector<int>& nums, int k) {
@@ -25,3 +22,6 @@ public:
         return ans; 
     }
 };
+// The idea is to map every number to a dictionary in order 
+// to check in O(1) if the number may form a k-diff pair. 
+// The frequency is only used for the case when nums[i] = nums[j]
