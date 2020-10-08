@@ -4,7 +4,6 @@ public:
         int i = 0, j = nums.size()-1, k; 
         
         while (j - i > 1) {
-            cout << k << endl; 
             k = (i + j)/2; 
             
             if (nums[k] > target)
