@@ -7,8 +7,6 @@ public:
             bool bad = false; 
             for (int i = 0; i < A.size(); ++i) {
                 if (A[i] != x && B[i] != x) {
-                    Amin = -1;
-                    Bmin = -1; 
                     bad = true; 
                     break; 
                 }
