@@ -32,8 +32,8 @@ int main() {
 
 // The idea is to use dynamic programming. 
 // For each i in {1, 2, ... , N} there are only two (optimal) choices: 
-//  - Use 1 at last position. 
-//  - Use B[i] at last position. 
+//  - Use 1 at position i. 
+//  - Use B[i] at position i . 
 // We store the solution in a Nx2 matrix and for each row we compute 
 // the maximum value looking the above row. 
 // The answer to the problem is simply the maximum value at last row. 
