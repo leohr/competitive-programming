@@ -16,8 +16,10 @@ int main() {
                 v[0] = 0; 
                 v[1] = 0; 
             } else {
+                // Use 1 at position i of A[i] 
                 v[0] = max(sol[i-1][0], 
                             sol[i-1][1] + abs(B[i-1] - 1)); 
+                // Use B[i] at position i of A[i]
                 v[1] = max(sol[i-1][1] + abs(B[i-1] - B[i]), 
                             sol[i-1][0] + abs(1 - B[i])); 
             }
