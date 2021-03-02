@@ -3,7 +3,6 @@ public:
     vector<int> findErrorNums(vector<int>& nums) {
         int n = nums.size();
         vector<int> ans(2); 
-        sort(nums.begin(), nums.end());
         map<int, int> mp; 
         for (int i = 0; i < n; ++i) {
             ++mp[nums[i]]; 
