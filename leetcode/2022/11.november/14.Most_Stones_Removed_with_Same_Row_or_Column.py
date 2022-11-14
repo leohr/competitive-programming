@@ -32,18 +32,5 @@ class Solution:
             if cc[i] == 0: 
                 cnt += 1
                 cc = self.ccDFS(G, i, cc, cnt)
-        
-        # Count number of vertices in each connected component
-        ccSize = dict() 
-        for i in cc: 
-            if i in ccSize.keys(): 
-                ccSize[i] += 1
-            else: 
-                ccSize[i] = 1
-
-        # The answer is the sum of size(cc)-1 across each component
-        ans = 0 
-        for i in ccSize: 
-            ans += ccSize[i] - 1
-
-        return ans
+                
+        return n - cnt 
